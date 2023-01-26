@@ -11,7 +11,11 @@ class ClusterCategoryAPI extends RESTDataSource {
   }
 
   async getClusterCategories() {
-    return this.get(`clustercategories`)
+    return this.get(`clustercategories`,{},{
+      headers:  { 
+        'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5NDY0NTE4OTcsInVpZCI6MCwicGwiOiJ3ZWIiLCJndWVzdF90b2tlbiI6ImNhNGNjMjdiNzc3MjBjODEwNzQ2YzY3MTY4NzNjMDI3NGU4NWYxMWQifQ.tt08jLZ3HiNadUeSgc9O-nhIzEi7WMYRjxMb05lEZ74'
+      }
+    })
   }
 
   async getClusterCategoriesWithPage(param) {
@@ -24,7 +28,11 @@ class ClusterCategoryAPI extends RESTDataSource {
       params['limit'] = pageSize
     }
     console.log(params)
-    const data = await this.get('clustercategories');
+    const data = await this.get('clustercategories',{},{
+      headers:  { 
+        'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE5NDY0NTE4OTcsInVpZCI6MCwicGwiOiJ3ZWIiLCJndWVzdF90b2tlbiI6ImNhNGNjMjdiNzc3MjBjODEwNzQ2YzY3MTY4NzNjMDI3NGU4NWYxMWQifQ.tt08jLZ3HiNadUeSgc9O-nhIzEi7WMYRjxMb05lEZ74'
+      }
+    });
     console.log(data)
 
     return data.data;
