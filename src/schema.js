@@ -37,7 +37,6 @@ module.exports = gql`
     pokemon(id: ID!): Pokemon
     version: String
     clusterCategories: [ClusterCategory]
-    masterpiece: [Masterpiece]
   }
 
 `
