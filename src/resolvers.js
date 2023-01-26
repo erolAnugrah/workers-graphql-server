@@ -5,12 +5,11 @@ module.exports = {
       return dataSources.pokemonAPI.getPokemon(id)
     },
     version: async (_source, __, { dataSources }) => {
-      return dataSources.version.getVersion()
+      return dataSources.versionAPI.getVersion()
+    },
+    clusterCategory: async (_source, { param }, { dataSources }) => {
+      console.log(param)
+      return dataSources.clusterCategory.getClusterCategories(param)
     }
-    // clusterCategory: async (_source, { param }, { dataSources }) => {
-    //   console.log(param)
-    //   return dataSources.clusterCategory.getClusterCategories(param)
-    // }
-    
-  },
+  }
 }
