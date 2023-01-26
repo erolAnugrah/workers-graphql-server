@@ -9,7 +9,7 @@ module.exports = {
     },
     clusterCategory: async (_source, { param }, { dataSources }) => {
       console.log(param)
-      return dataSources.clusterCategory.getClusterCategories(param)
+      return dataSources.clusterCategoryAPI.getClusterCategories(param)
     }
   }
 }
