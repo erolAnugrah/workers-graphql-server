@@ -21,15 +21,15 @@ module.exports = gql`
   }
 
   type ClusterCategory {
-    id: ID!
-    title: String!
-    slug: String!
-    url_square_poster: String!
-    url_landscape_poster: String!
-    api_url: String!
-    status: Int!
-    sorting: Int!
-    has_children: Boolean!
+    id: ID
+    title: String
+    slug: String
+    url_square_poster: String
+    url_landscape_poster: String
+    api_url: String
+    status: Int
+    sorting: Int
+    has_children: Boolean
   }
   
 
