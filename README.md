@@ -96,3 +96,5 @@ With a configured KV namespace set up, you can opt-in to KV caching by changing 
 ## License
 
 This project is licensed with the [MIT License](https://github.com/cloudflare/workers-graphql-server/blob/master/LICENSE).
+
+test
