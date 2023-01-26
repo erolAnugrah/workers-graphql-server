@@ -16,7 +16,7 @@ class MasterpieceAPI extends RESTDataSource {
     const data = await this.get(target)
     console.log(data)
 
-    return data.data;
+    return data.data.list;
   }
 }
 
