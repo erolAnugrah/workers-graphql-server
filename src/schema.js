@@ -36,7 +36,7 @@ module.exports = gql`
   type Query {
     pokemon(id: ID!): Pokemon
     version: String
-    clusterCategories: ClusterCategory
+    clusterCategories: [ClusterCategory]
   }
 
 `
