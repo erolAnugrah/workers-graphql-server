@@ -21,7 +21,7 @@ module.exports = gql`
   }
 
   type ClusterCategory {
-    id: Int!
+    id: ID!
     title: String!
     slug: String!
     url_square_poster: String!

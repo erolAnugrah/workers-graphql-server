@@ -6,8 +6,7 @@ module.exports = {
     version: async (_source, __, { dataSources }) => {
       return dataSources.versionAPI.getVersion()
     },
-    clusterCategory: async (_source, __, { dataSources }) => {
-      console.log(param)
+    clusterCategories: async (_source, __, { dataSources }) => {
       return dataSources.clusterCategoryAPI.getClusterCategories()
     }
   }
