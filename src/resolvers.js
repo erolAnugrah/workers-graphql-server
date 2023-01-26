@@ -5,7 +5,7 @@ module.exports = {
       return dataSources.pokemonAPI.getPokemon(id)
     },
     version: async (_source,{ dataSources }) => {
-      return dataSources.versionAPI.getVersion()
+      return dataSources.version.getVersion()
     }
     // clusterCategory: async (_source, { param }, { dataSources }) => {
     //   console.log(param)
