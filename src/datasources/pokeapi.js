@@ -7,7 +7,9 @@ class PokemonAPI extends RESTDataSource {
   }
 
   async getPokemon(id) {
-    return this.get(`pokemon/${id}`)
+    const data = await this.get(`pokemon/${id}`)
+    console.log(data)
+    return data
   }
 }
 

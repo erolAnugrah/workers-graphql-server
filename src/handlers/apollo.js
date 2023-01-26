@@ -13,7 +13,7 @@ const typeDefs = require('../schema')
 const dataSources = () => ({
   pokemonAPI: new PokemonAPI(),
   versionAPI: new VersionAPI(),
-  clusterCategoryAPI: new ClusterCategoryAPI()
+  clusterCategoryAPI: ClusterCategoryAPI()
 })
 
 const kvCache = { cache: new KVCache() }
