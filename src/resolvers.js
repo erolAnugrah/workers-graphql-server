@@ -4,10 +4,10 @@ module.exports = {
 
       return dataSources.pokemonAPI.getPokemon(id)
     },
-    clusterCategory: async (_source, { param }, { dataSources }) => {
-      console.log(param)
-      return dataSources.clusterCategory.getClusterCategoriesWithPage(param)
-    }
+    // clusterCategory: async (_source, { param }, { dataSources }) => {
+    //   console.log(param)
+    //   return dataSources.clusterCategory.getClusterCategories(param)
+    // }
     
   },
 }
