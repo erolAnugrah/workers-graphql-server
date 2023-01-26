@@ -8,6 +8,9 @@ module.exports = {
     },
     clusterCategories: async (_source, __, { dataSources }) => {
       return dataSources.clusterCategoryAPI.getClusterCategories()
+    },
+    masterpiece: async (_source, {id}, { dataSources }) => {
+      return dataSources.masterpieceAPI.getMasterpieces(id)
     }
   }
 }
