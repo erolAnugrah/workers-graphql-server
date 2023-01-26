@@ -32,13 +32,13 @@ module.exports = gql`
     has_children: Boolean
   }
   
-  type Pagination {
+  type PaginationParams {
     pageNo: Int!
     pageSize: Int!
   }
 
   type Param {
-    pagination: Pagination
+    pagination: PaginationParams
   }
 
   type Version {
