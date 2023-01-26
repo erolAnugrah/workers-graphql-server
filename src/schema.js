@@ -21,25 +21,17 @@ module.exports = gql`
   }
 
   type ClusterCategory {
-    id: Int
-    title: String
-    slug: String
-    url_square_poster: String
-    url_landscape_poster: String
-    api_url: String
-    status: Int
-    sorting: Int
-    has_children: Boolean
+    id: Int!
+    title: String!
+    slug: String!
+    url_square_poster: String!
+    url_landscape_poster: String!
+    api_url: String!
+    status: Int!
+    sorting: Int!
+    has_children: Boolean!
   }
   
-  type PaginationParams {
-    pageNo: Int!
-    pageSize: Int!
-  }
-
-  type Param {
-    pagination: PaginationParams
-  }
 
   type Query {
     pokemon(id: ID!): Pokemon
