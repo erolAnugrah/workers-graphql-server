@@ -6,6 +6,7 @@ const {
 const KVCache = require('../kv-cache')
 const VersionAPI = require('../datasources/version')
 const PokemonAPI = require('../datasources/pokeapi')
+const MasterpieceAPI = require('../datasources/masterpiece')
 const ClusterCategoryAPI = require('../datasources/clusterCategory')
 const resolvers = require('../resolvers')
 const typeDefs = require('../schema')
@@ -13,7 +14,8 @@ const typeDefs = require('../schema')
 const dataSources = () => ({
   pokemonAPI: new PokemonAPI(),
   versionAPI: new VersionAPI(),
-  clusterCategoryAPI: new ClusterCategoryAPI()
+  clusterCategoryAPI: new ClusterCategoryAPI(),
+  masterpieceAPI: new MasterpieceAPI()
 })
 
 const kvCache = { cache: new KVCache() }
