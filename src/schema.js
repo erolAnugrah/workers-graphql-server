@@ -20,6 +20,21 @@ module.exports = gql`
     sprites: PokemonSprites!
   }
 
+  type Masterpiece {
+    id: ID
+    name: String
+    chef_name: String
+    chef_kecamatan: String
+    chef_kota: String
+    chef_alamat: String
+    chef_avatar: String
+    status: String
+    description: String
+    min_order: Int
+    price: Int
+    priceDiskon: Int
+  }
+  
   type ClusterCategory {
     id: ID
     title: String
@@ -37,6 +52,7 @@ module.exports = gql`
     pokemon(id: ID!): Pokemon
     version: String
     clusterCategories: [ClusterCategory]
+    masterpiece: [Masterpiece]
   }
 
 `
