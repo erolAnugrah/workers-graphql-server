@@ -10,11 +10,11 @@ const ClusterCategoryAPI = require('../datasources/clusterCategory')
 const resolvers = require('../resolvers')
 const typeDefs = require('../schema')
 
-const dataSources = () => {
-  pokemonAPI: new PokemonAPI()
-  versionAPI: new VersionAPI()
+const dataSources = () => ({
+  pokemonAPI: new PokemonAPI(),
+  versionAPI: new VersionAPI(),
   clusterCategoryAPI: new ClusterCategoryAPI()
-}
+})
 
 const kvCache = { cache: new KVCache() }
 
