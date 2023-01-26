@@ -11,12 +11,9 @@ compatibility_date = "2021-10-03"
 
 # Enable a kv-namespace to use the KV caching feature
 #
-# kv-namespaces = [
-#   { binding = "WORKERS_GRAPHQL_CACHE", id = "" }
-# ]
-
-[build]
-command = "npm install && npm run build"
+kv-namespaces = [
+   { binding = "WORKERS_GRAPHQL_CACHE", id = "247c2d409a6c428fbddffc8718e377f9" }
+]
 
 [build.upload]
 format = "modules"
