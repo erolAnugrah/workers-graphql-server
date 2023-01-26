@@ -20,7 +20,12 @@ module.exports = gql`
     sprites: PokemonSprites!
   }
 
+  type Version {
+    version: String!
+  }
   type Query {
     pokemon(id: ID!): Pokemon
+    version: Version
   }
+
 `
