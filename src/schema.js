@@ -41,13 +41,9 @@ module.exports = gql`
     pagination: PaginationParams
   }
 
-  type Version {
-    version: String!
-  }
-
   type Query {
     pokemon(id: ID!): Pokemon
-    version: Version
+    version: String
   }
 
 `
